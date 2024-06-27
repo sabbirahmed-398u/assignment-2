@@ -1,3 +1,5 @@
+
+
 // 1) Write a function named ‘calculateSum’ that takes two arguments and returns their sum.
 
 function calculateSum (num1, num2){
@@ -42,7 +44,7 @@ function filterOddNumbers(arr) {
   return arr.filter((number) => number % 2 !== 0);
 }
 let oddNumbersArray = filterOddNumbers(numbersArray);
-console.log(filterOddNumbers(oddNumbersArray));
+// console.log(filterOddNumbers(oddNumbersArray));
 // output is : [ 1, 3, 5, 7, 9 ]
 
 // 6) Write a function named ‘sumArray’ that takes an array of numbers and returns the sum of all elements.
@@ -59,13 +61,19 @@ let numbers = [10,20]
 // output is : 30
 
 // 7) Write a function named ‘sortArray’ that takes an array of numbers and returns a new array sorted in ascending order.
-// alochona korte hobe
-function sortArray(arr){
-     return arr.sort();
+
+function sortArray(numbers) {
+  
+  numbers.sort((a, b) => a - b);
+  
+  return numbers;
 }
-let arrrey = [50,14,65,74,1,30,5];
-// console.log(sortArray(arrrey));
-// alochona korte hobe
+
+
+let array = [5, 3, 8, 1, 2];
+let sortedArray = sortArray(array);
+// console.log(sortedArray); 
+// Output: [1, 2, 3, 5, 8]
 
 // 8) Write a function named ‘capitalizeFirstLetter’ that takes a string and returns the same string with the first letter capitalized. 
 function capitalizeFirstLetter(strg){
